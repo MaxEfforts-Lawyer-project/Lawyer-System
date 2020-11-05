@@ -1,0 +1,58 @@
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Lawyer System.exe.config
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Lawyer System.exe
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Lawyer System.pdb
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\EntityFramework.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Mina.UI_WinForm.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\EnvDTE.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\EnvDTE80.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\VSLangProj.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\stdole.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.Shell.Design.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.TextTemplating.Interfaces.11.0.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.TextTemplating.Interfaces.10.0.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.Shell.Framework.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.Shell.15.0.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.Telemetry.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.Build.Framework.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.RemoteControl.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.VisualStudio.Utilities.Internal.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\EntityFramework.xml
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.xml
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.xml
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer System.csprojAssemblyReference.cache
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer System.exe.config
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer_System.Areas.CalenderArea.CalenderMainLayout.resources
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer_System.Areas.CalenderArea.Compentents.DayOfCalender.resources
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer_System.Areas.ClientArea.EditClientForm.resources
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer_System.Areas.LawsuitArea.CreateLawSuitArea.resources
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer_System.Areas.LawsuitArea.EditLawSuitForm.resources
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer_System.Areas.MainForm.resources
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer_System.Areas.OpponentArea.EditOppnentForm.resources
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer_System.Areas.sessionarea.AddNewsession.resources
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer_System.Form1.resources
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer_System.Forms.Clients.resources
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer_System.Migrations.ss.resources
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer_System.Properties.Resources.resources
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer System.csproj.GenerateResource.cache
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer System.csproj.CoreCompileInputs.cache
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer System.csproj.CopyComplete
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer System.exe
+C:\Users\Mena Samer\Source\Repos\Lawyer-System\Lawyer System\obj\Debug\Lawyer System.pdb

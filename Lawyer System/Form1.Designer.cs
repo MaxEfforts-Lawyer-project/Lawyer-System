@@ -44,9 +44,11 @@
             this.CloseButton = new System.Windows.Forms.Button();
             this.labelHomeTitle = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panelMainMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
+            this.panelChildForm.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMainMenu
@@ -60,9 +62,10 @@
             this.panelMainMenu.Controls.Add(this.button1);
             this.panelMainMenu.Controls.Add(this.panelLogo);
             this.panelMainMenu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelMainMenu.Location = new System.Drawing.Point(680, 0);
+            this.panelMainMenu.Location = new System.Drawing.Point(907, 0);
+            this.panelMainMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelMainMenu.Name = "panelMainMenu";
-            this.panelMainMenu.Size = new System.Drawing.Size(220, 486);
+            this.panelMainMenu.Size = new System.Drawing.Size(293, 598);
             this.panelMainMenu.TabIndex = 0;
             // 
             // button6
@@ -74,11 +77,12 @@
             this.button6.ForeColor = System.Drawing.Color.Gainsboro;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.Location = new System.Drawing.Point(0, 380);
+            this.button6.Location = new System.Drawing.Point(0, 468);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
+            this.button6.Padding = new System.Windows.Forms.Padding(0, 0, 16, 0);
             this.button6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button6.Size = new System.Drawing.Size(220, 60);
+            this.button6.Size = new System.Drawing.Size(293, 74);
             this.button6.TabIndex = 6;
             this.button6.Text = "اسـتـئـناف";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -95,11 +99,12 @@
             this.button5.ForeColor = System.Drawing.Color.Gainsboro;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.Location = new System.Drawing.Point(0, 320);
+            this.button5.Location = new System.Drawing.Point(0, 394);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
+            this.button5.Padding = new System.Windows.Forms.Padding(0, 0, 16, 0);
             this.button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button5.Size = new System.Drawing.Size(220, 60);
+            this.button5.Size = new System.Drawing.Size(293, 74);
             this.button5.TabIndex = 5;
             this.button5.Text = "مدني كلي";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -116,11 +121,12 @@
             this.button4.ForeColor = System.Drawing.Color.Gainsboro;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(0, 260);
+            this.button4.Location = new System.Drawing.Point(0, 320);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
+            this.button4.Padding = new System.Windows.Forms.Padding(0, 0, 16, 0);
             this.button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button4.Size = new System.Drawing.Size(220, 60);
+            this.button4.Size = new System.Drawing.Size(293, 74);
             this.button4.TabIndex = 4;
             this.button4.Text = "مدني جزئي";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -137,11 +143,12 @@
             this.button3.ForeColor = System.Drawing.Color.Gainsboro;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(0, 200);
+            this.button3.Location = new System.Drawing.Point(0, 246);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
+            this.button3.Padding = new System.Windows.Forms.Padding(0, 0, 16, 0);
             this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button3.Size = new System.Drawing.Size(220, 60);
+            this.button3.Size = new System.Drawing.Size(293, 74);
             this.button3.TabIndex = 3;
             this.button3.Text = "جدول المواعيد";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -158,11 +165,12 @@
             this.button2.ForeColor = System.Drawing.Color.Gainsboro;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(0, 140);
+            this.button2.Location = new System.Drawing.Point(0, 172);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
+            this.button2.Padding = new System.Windows.Forms.Padding(0, 0, 16, 0);
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button2.Size = new System.Drawing.Size(220, 60);
+            this.button2.Size = new System.Drawing.Size(293, 74);
             this.button2.TabIndex = 2;
             this.button2.Text = "الدعوى";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -181,11 +189,12 @@
             this.button1.ForeColor = System.Drawing.Color.Gainsboro;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(0, 80);
+            this.button1.Location = new System.Drawing.Point(0, 98);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
+            this.button1.Padding = new System.Windows.Forms.Padding(0, 0, 16, 0);
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(220, 60);
+            this.button1.Size = new System.Drawing.Size(293, 74);
             this.button1.TabIndex = 1;
             this.button1.Text = "الموكلين";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -199,8 +208,9 @@
             this.panelLogo.Controls.Add(this.Logo);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 80);
+            this.panelLogo.Size = new System.Drawing.Size(293, 98);
             this.panelLogo.TabIndex = 0;
             // 
             // Logo
@@ -209,9 +219,10 @@
             this.Logo.AutoSize = true;
             this.Logo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Logo.ForeColor = System.Drawing.SystemColors.Control;
-            this.Logo.Location = new System.Drawing.Point(84, 32);
+            this.Logo.Location = new System.Drawing.Point(112, 39);
+            this.Logo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(62, 22);
+            this.Logo.Size = new System.Drawing.Size(75, 26);
             this.Logo.TabIndex = 0;
             this.Logo.Text = "LOGO";
             // 
@@ -224,8 +235,9 @@
             this.panelTitleBar.Controls.Add(this.labelHomeTitle);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(0, 0);
+            this.panelTitleBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(680, 80);
+            this.panelTitleBar.Size = new System.Drawing.Size(907, 98);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -235,9 +247,10 @@
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
-            this.btnMinimize.Location = new System.Drawing.Point(36, 0);
+            this.btnMinimize.Location = new System.Drawing.Point(48, 0);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(30, 30);
+            this.btnMinimize.Size = new System.Drawing.Size(40, 37);
             this.btnMinimize.TabIndex = 4;
             this.btnMinimize.Text = "-";
             this.btnMinimize.UseVisualStyleBackColor = true;
@@ -250,8 +263,9 @@
             this.btnCloseApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCloseApplication.ForeColor = System.Drawing.Color.White;
             this.btnCloseApplication.Location = new System.Drawing.Point(0, 0);
+            this.btnCloseApplication.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCloseApplication.Name = "btnCloseApplication";
-            this.btnCloseApplication.Size = new System.Drawing.Size(30, 30);
+            this.btnCloseApplication.Size = new System.Drawing.Size(40, 37);
             this.btnCloseApplication.TabIndex = 2;
             this.btnCloseApplication.Text = "X";
             this.btnCloseApplication.UseVisualStyleBackColor = true;
@@ -263,9 +277,10 @@
             this.CloseButton.FlatAppearance.BorderSize = 0;
             this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseButton.Image = ((System.Drawing.Image)(resources.GetObject("CloseButton.Image")));
-            this.CloseButton.Location = new System.Drawing.Point(605, 0);
+            this.CloseButton.Location = new System.Drawing.Point(807, 0);
+            this.CloseButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(75, 80);
+            this.CloseButton.Size = new System.Drawing.Size(100, 98);
             this.CloseButton.TabIndex = 1;
             this.CloseButton.UseVisualStyleBackColor = true;
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
@@ -275,31 +290,43 @@
             this.labelHomeTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelHomeTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHomeTitle.ForeColor = System.Drawing.Color.White;
-            this.labelHomeTitle.Location = new System.Drawing.Point(244, 32);
+            this.labelHomeTitle.Location = new System.Drawing.Point(325, 39);
+            this.labelHomeTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelHomeTitle.Name = "labelHomeTitle";
-            this.labelHomeTitle.Size = new System.Drawing.Size(148, 25);
+            this.labelHomeTitle.Size = new System.Drawing.Size(197, 31);
             this.labelHomeTitle.TabIndex = 0;
             this.labelHomeTitle.Text = "Welcome Mina,";
             this.labelHomeTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panelChildForm
             // 
+            this.panelChildForm.Controls.Add(this.comboBox1);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForm.Location = new System.Drawing.Point(0, 80);
+            this.panelChildForm.Location = new System.Drawing.Point(0, 98);
+            this.panelChildForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(680, 406);
+            this.panelChildForm.Size = new System.Drawing.Size(907, 500);
             this.panelChildForm.TabIndex = 2;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(390, 74);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(250, 24);
+            this.comboBox1.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 486);
+            this.ClientSize = new System.Drawing.Size(1200, 598);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMainMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimumSize = new System.Drawing.Size(900, 480);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(1200, 591);
             this.Name = "Form1";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -308,6 +335,7 @@
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
             this.panelTitleBar.ResumeLayout(false);
+            this.panelChildForm.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -328,6 +356,7 @@
         private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Button btnCloseApplication;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
