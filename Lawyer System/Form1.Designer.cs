@@ -39,6 +39,8 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.Logo = new System.Windows.Forms.Label();
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnCloseApplication = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
             this.labelHomeTitle = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
@@ -58,7 +60,7 @@
             this.panelMainMenu.Controls.Add(this.button1);
             this.panelMainMenu.Controls.Add(this.panelLogo);
             this.panelMainMenu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelMainMenu.Location = new System.Drawing.Point(568, 0);
+            this.panelMainMenu.Location = new System.Drawing.Point(680, 0);
             this.panelMainMenu.Name = "panelMainMenu";
             this.panelMainMenu.Size = new System.Drawing.Size(220, 486);
             this.panelMainMenu.TabIndex = 0;
@@ -216,13 +218,44 @@
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.panelTitleBar.Controls.Add(this.btnMinimize);
+            this.panelTitleBar.Controls.Add(this.btnCloseApplication);
             this.panelTitleBar.Controls.Add(this.CloseButton);
             this.panelTitleBar.Controls.Add(this.labelHomeTitle);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(0, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(568, 80);
+            this.panelTitleBar.Size = new System.Drawing.Size(680, 80);
             this.panelTitleBar.TabIndex = 1;
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimize.ForeColor = System.Drawing.Color.White;
+            this.btnMinimize.Location = new System.Drawing.Point(36, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(30, 30);
+            this.btnMinimize.TabIndex = 4;
+            this.btnMinimize.Text = "-";
+            this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // btnCloseApplication
+            // 
+            this.btnCloseApplication.FlatAppearance.BorderSize = 0;
+            this.btnCloseApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseApplication.ForeColor = System.Drawing.Color.White;
+            this.btnCloseApplication.Location = new System.Drawing.Point(0, 0);
+            this.btnCloseApplication.Name = "btnCloseApplication";
+            this.btnCloseApplication.Size = new System.Drawing.Size(30, 30);
+            this.btnCloseApplication.TabIndex = 2;
+            this.btnCloseApplication.Text = "X";
+            this.btnCloseApplication.UseVisualStyleBackColor = true;
+            this.btnCloseApplication.Click += new System.EventHandler(this.btnCloseApplication_Click);
             // 
             // CloseButton
             // 
@@ -230,7 +263,7 @@
             this.CloseButton.FlatAppearance.BorderSize = 0;
             this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseButton.Image = ((System.Drawing.Image)(resources.GetObject("CloseButton.Image")));
-            this.CloseButton.Location = new System.Drawing.Point(493, 0);
+            this.CloseButton.Location = new System.Drawing.Point(605, 0);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(75, 80);
             this.CloseButton.TabIndex = 1;
@@ -242,7 +275,7 @@
             this.labelHomeTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelHomeTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHomeTitle.ForeColor = System.Drawing.Color.White;
-            this.labelHomeTitle.Location = new System.Drawing.Point(188, 32);
+            this.labelHomeTitle.Location = new System.Drawing.Point(244, 32);
             this.labelHomeTitle.Name = "labelHomeTitle";
             this.labelHomeTitle.Size = new System.Drawing.Size(148, 25);
             this.labelHomeTitle.TabIndex = 0;
@@ -254,19 +287,22 @@
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(0, 80);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(568, 406);
+            this.panelChildForm.Size = new System.Drawing.Size(680, 406);
             this.panelChildForm.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 486);
+            this.ClientSize = new System.Drawing.Size(888, 486);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMainMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(900, 480);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMainMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
@@ -290,6 +326,8 @@
         private System.Windows.Forms.Label Logo;
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Button CloseButton;
+        private System.Windows.Forms.Button btnMinimize;
+        private System.Windows.Forms.Button btnCloseApplication;
     }
 }
 

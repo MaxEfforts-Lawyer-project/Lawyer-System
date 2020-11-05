@@ -43,9 +43,13 @@ public static class ThemeColors
 
     private static List<string> tempColors = new List<string>()
     {
-        "#FF9800",
+        "#EA676C",
         "#43B76E",
         "#F37521",
+        "#00B0AD",
+        "#43B76E",
+        "#F37521",
+
 
 
     };
@@ -81,5 +85,11 @@ public static class ThemeColors
 
         string color = ThemeColors.colors[index];
         return ColorTranslator.FromHtml(color);
+    }
+
+    public static Color tempColorSelecet(int index)
+    {
+        string c = tempColors[index];
+        return ColorTranslator.FromHtml(c);
     }
 }

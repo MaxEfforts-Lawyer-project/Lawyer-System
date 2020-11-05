@@ -13,6 +13,7 @@ namespace Lawyer_System.Areas
         public DateTime date { get; set; }
 
         public byte[] img { get; set; }
+        public Lawsuit lawsuit { get; set; }
 
     }
 }

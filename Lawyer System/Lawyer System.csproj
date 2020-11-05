@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lawyer_System</RootNamespace>
     <AssemblyName>Lawyer System</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -36,6 +37,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Scaffolding.EntityFramework.12.0, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Mina.UI_WinForm, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MinaUI.2.0.1\lib\net472\Mina.UI_WinForm.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -52,31 +63,114 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="Areas\ApplicationManager.cs" />
+    <Compile Include="Areas\CalenderArea\CalenderMainLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Areas\CalenderArea\CalenderMainLayout.Designer.cs">
+      <DependentUpon>CalenderMainLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\CalenderArea\Compentents\DayOfCalender.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Areas\CalenderArea\Compentents\DayOfCalender.Designer.cs">
+      <DependentUpon>DayOfCalender.cs</DependentUpon>
+    </Compile>
     <Compile Include="Areas\ClientArea\Client.cs" />
+    <Compile Include="Areas\ClientArea\EditClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Areas\ClientArea\EditClientForm.Designer.cs">
+      <DependentUpon>EditClientForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Areas\DocumentArea\Document.cs" />
+    <Compile Include="Areas\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Areas\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Areas\IDs.cs" />
+    <Compile Include="Areas\LawsuitArea\CreateLawSuitArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Areas\LawsuitArea\CreateLawSuitArea.Designer.cs">
+      <DependentUpon>CreateLawSuitArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\LawsuitArea\EditLawSuitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Areas\LawsuitArea\EditLawSuitForm.Designer.cs">
+      <DependentUpon>EditLawSuitForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Areas\LawsuitArea\Lawsuit.cs" />
+    <Compile Include="Areas\OpponentArea\EditOppnentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Areas\OpponentArea\EditOppnentForm.Designer.cs">
+      <DependentUpon>EditOppnentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Areas\OpponentArea\Opponent.cs" />
+    <Compile Include="Areas\sessionarea\AddNewsession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Areas\sessionarea\AddNewsession.Designer.cs">
+      <DependentUpon>AddNewsession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\sessionarea\session.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Clients.cs">
+    <Compile Include="Areas\ClientArea\Clients.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Clients.Designer.cs">
+    <Compile Include="Areas\ClientArea\Clients.Designer.cs">
       <DependentUpon>Clients.cs</DependentUpon>
     </Compile>
+    <Compile Include="LawsuitType\MadanyKoly\ToString.cs" />
+    <Compile Include="Migrations\202011041604359_ss.cs" />
+    <Compile Include="Migrations\202011041604359_ss.designer.cs">
+      <DependentUpon>202011041604359_ss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemeColors.cs" />
+    <EmbeddedResource Include="Areas\CalenderArea\CalenderMainLayout.resx">
+      <DependentUpon>CalenderMainLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Areas\CalenderArea\Compentents\DayOfCalender.resx">
+      <DependentUpon>DayOfCalender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Areas\ClientArea\EditClientForm.resx">
+      <DependentUpon>EditClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Areas\LawsuitArea\CreateLawSuitArea.resx">
+      <DependentUpon>CreateLawSuitArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Areas\LawsuitArea\EditLawSuitForm.resx">
+      <DependentUpon>EditLawSuitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Areas\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Areas\OpponentArea\EditOppnentForm.resx">
+      <DependentUpon>EditOppnentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Areas\sessionarea\AddNewsession.resx">
+      <DependentUpon>AddNewsession.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Clients.resx">
+    <EmbeddedResource Include="Areas\ClientArea\Clients.resx">
       <DependentUpon>Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011041604359_ss.resx">
+      <DependentUpon>202011041604359_ss.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -88,6 +182,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,6 +200,14 @@
     <Folder Include="Assets\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

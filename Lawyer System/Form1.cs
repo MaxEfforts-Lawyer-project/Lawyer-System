@@ -1,6 +1,10 @@
-﻿using System;
+﻿using Lawyer_System.Areas;
+using Lawyer_System.Areas.CalenderArea;
+using Lawyer_System.Areas.LawsuitArea;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace Lawyer_System
@@ -20,9 +24,24 @@ namespace Lawyer_System
             random = new Random();
             tempIndex = 0;
             CloseButton.Visible = false;
+            this.Text = string.Empty;
+            this.ControlBox = false;
+
+            //Drag Form
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
         }
 
-        
+
+        //Drag Form
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+
+
+
 
         private Color selectRandomThemeColor()
         {
@@ -43,7 +62,7 @@ namespace Lawyer_System
                 if(currentButton != (Button)btnSender)
                 {
                     disableOtherButtons();
-                    Color color = ThemeColors.selectButtonColor(colorIndex);
+                    Color color = ThemeColors.tempColorSelecet(colorIndex);
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
@@ -53,6 +72,7 @@ namespace Lawyer_System
                     panelTitleBar.BackColor =ThemeColors.ChangeColorBrightness(color,-0.05);
                     ThemeColors.PrimaryColor = color;
                     ThemeColors.SecondaryColor= ThemeColors.ChangeColorBrightness(color, -0.2);
+                    CloseButton.Visible = true;
                 }
             }
         }
@@ -97,34 +117,43 @@ namespace Lawyer_System
         {
             string formTitle = "الموكلين";
             Form clientsForm = new Forms.Clients();
-            int colorIndex = 7;
+            int colorIndex = 0;//7
             openForm(clientsForm,sender,colorIndex,formTitle);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            foreach (Control btn in panelMainMenu.Controls)
-            {
-                if (btn.GetType() == typeof(Button))
-                {
-                    buttons.Add((Button)btn);
-                }
-            }
+            
+          //  MainForm mainform = new MainForm();
+          
+            // openForm(mainform, sender, 0, "");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             activeButton(sender, 1);
+            
+            string formTitle = "اضافة دعوى";
+            CreateLawSuitArea addlatsuit = new CreateLawSuitArea();
+            int colorIndex = 1;
+            openForm(addlatsuit, sender, colorIndex, formTitle);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             activeButton(sender, 2);
+            CalenderMainLayout c = new CalenderMainLayout();
+            openForm(c, sender, 2, "جدول المواعيد");
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            activeButton(sender, 8);
+            activeButton(sender, 3);//8
+            MainForm mainform = new MainForm();
+            string formTitle = "مدنى جذئى";
+          
+            int colorIndex = 3;//7
+            openForm(mainform, sender, colorIndex, formTitle);
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -141,6 +170,39 @@ namespace Lawyer_System
         {
             if (activeForm != null)
                 activeForm.Close();
+            Reset();
+        }
+        void Reset() {
+            disableOtherButtons();
+            panelLogo.BackColor = Color.FromArgb(39, 39, 58);
+            panelTitleBar.BackColor = Color.FromArgb(0, 150, 136);
+            CloseButton.Visible = false;
+            labelHomeTitle.Text = "Welcome, Mina";
+            currentButton = null;
+        }
+
+        private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnCloseApplication_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 

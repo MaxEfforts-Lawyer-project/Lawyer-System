@@ -36,6 +36,8 @@
             this.txtBoxIdCard = new System.Windows.Forms.TextBox();
             this.btnAddClient = new System.Windows.Forms.Button();
             this.lblNewClient = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tawkelNumbertextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtBoxclientName
@@ -113,7 +115,7 @@
             this.btnAddClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddClient.ForeColor = System.Drawing.Color.White;
-            this.btnAddClient.Location = new System.Drawing.Point(41, 293);
+            this.btnAddClient.Location = new System.Drawing.Point(16, 321);
             this.btnAddClient.Name = "btnAddClient";
             this.btnAddClient.Size = new System.Drawing.Size(120, 30);
             this.btnAddClient.TabIndex = 6;
@@ -132,11 +134,36 @@
             this.lblNewClient.TabIndex = 7;
             this.lblNewClient.Text = "إضافة موكل جديد";
             // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(428, 277);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "رقم التوكيل";
+            // 
+            // tawkelNumbertextBox
+            // 
+            this.tawkelNumbertextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tawkelNumbertextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tawkelNumbertextBox.Location = new System.Drawing.Point(154, 275);
+            this.tawkelNumbertextBox.MaxLength = 14;
+            this.tawkelNumbertextBox.Name = "tawkelNumbertextBox";
+            this.tawkelNumbertextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.tawkelNumbertextBox.Size = new System.Drawing.Size(242, 20);
+            this.tawkelNumbertextBox.TabIndex = 8;
+            this.tawkelNumbertextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxIdCard_KeyPress);
+            // 
             // Clients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(552, 368);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.tawkelNumbertextBox);
             this.Controls.Add(this.lblNewClient);
             this.Controls.Add(this.btnAddClient);
             this.Controls.Add(this.lblIDCard);
@@ -163,5 +190,7 @@
         private System.Windows.Forms.TextBox txtBoxIdCard;
         private System.Windows.Forms.Button btnAddClient;
         private System.Windows.Forms.Label lblNewClient;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tawkelNumbertextBox;
     }
 }
