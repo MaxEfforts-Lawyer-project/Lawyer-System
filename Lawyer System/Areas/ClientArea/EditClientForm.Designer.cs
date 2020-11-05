@@ -78,7 +78,7 @@
             this.btnAddClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddClient.ForeColor = System.Drawing.Color.White;
-            this.btnAddClient.Location = new System.Drawing.Point(3, 219);
+            this.btnAddClient.Location = new System.Drawing.Point(18, 219);
             this.btnAddClient.Name = "btnAddClient";
             this.btnAddClient.Size = new System.Drawing.Size(120, 30);
             this.btnAddClient.TabIndex = 16;
